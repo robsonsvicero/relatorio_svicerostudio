@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svicero Studio | Relatório de Engenharia Visual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FFF8F2;
+      --text: #2F353B;
+      --accent: #B87333;
+      --surface: #ffffff;
+      --border: #ecdccf;
+      --muted: #6f767d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #fff 0%, #fdf5ef 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 12px 32px rgba(47, 53, 59, 0.08);
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Manrope', sans-serif;
+      margin: 0;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 72ch;
+      color: var(--muted);
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+    }
+
+    .kpi {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .kpi strong {
+      display: block;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+
+    main {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(47, 53, 59, 0.06);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+
+    .section-title::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    article ol {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 16px;
+    }
+
+    article li {
+      padding-left: 6px;
+    }
+
+    article h3 {
+      font-size: 1.02rem;
+      margin-bottom: 4px;
+    }
+
+    article p { margin: 0; color: #4b5258; }
+
+    .palette {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .swatch {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .swatch-color {
+      height: 58px;
+    }
+
+    .swatch-meta {
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    .pill {
+      display: inline-block;
+      border: 1px solid #d7bb9f;
+      color: #8a5427;
+      background: #fff8f2;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      margin: 2px 4px 2px 0;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 920px) {
+      main { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .hero, .card { box-shadow: none; break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <span class="eyebrow">Svicero Studio • Relatório Estratégico</span>
+      <h1>Painel de Engenharia Visual 2026</h1>
+      <p>
+        Documento de posicionamento para clientes premium, com foco em autoridade de marca,
+        consistência visual e aumento da percepção de valor em cada ponto de contato.
+      </p>
+      <div class="kpis">
+        <div class="kpi"><strong>+Autoridade</strong><span>Percepção de marca sólida e confiável.</span></div>
+        <div class="kpi"><strong>+Clareza</strong><span>Narrativa visual direta para decisão rápida.</span></div>
+        <div class="kpi"><strong>+ROI</strong><span>Redução de objeção de preço e ciclo comercial.</span></div>
+      </div>
+    </header>
+
+    <main>
+      <article class="card">
+        <h2 class="section-title">Tese de Identidade Visual</h2>
+        <ol>
+          <li>
+            <h3>Conceito Central: Arquitetura da Decisão</h3>
+            <p>Abandonamos o design por intuição para adotar design por evidência: cada elemento visual cumpre papel estratégico na conversão e no posicionamento.</p>
+          </li>
+          <li>
+            <h3>Paleta de Cores Estratégica</h3>
+            <p>O carvão transmite solidez, a terracota agrega sofisticação e calor, e o creme garante legibilidade premium em ambientes digitais e impressos.</p>
+          </li>
+          <li>
+            <h3>Tipografia e Rigor Sistêmico</h3>
+            <p>Manrope organiza hierarquia com personalidade técnica; Inter mantém leitura confortável em relatórios longos e layouts complexos.</p>
+          </li>
+          <li>
+            <h3>Grid como Linguagem de Precisão</h3>
+            <p>Estrutura modular para comunicar organização, previsibilidade e alta capacidade de execução.</p>
+          </li>
+          <li>
+            <h3>Estilo Fotográfico e Texturas</h3>
+            <p>Arquitetura, materiais nobres e composições limpas reforçam o discurso de “ordem sobre o caos”.</p>
+          </li>
+          <li>
+            <h3>Justificativa de Proteção de ROI</h3>
+            <p>Ao alinhar estética e entrega técnica, a marca sustenta preço premium e aumenta confiança antes mesmo da proposta comercial.</p>
+          </li>
+          <li>
+            <h3>Tom de Voz Visual</h3>
+            <p>Sóbrio, direto e profissional. Comunicação visual com presença executiva e baixa fricção cognitiva.</p>
+          </li>
+          <li>
+            <h3>Diferenciação de Mercado</h3>
+            <p>Posicionamento atemporal para competir por autoridade, não por tendência.</p>
+          </li>
+          <li>
+            <h3>Conclusão Estratégica</h3>
+            <p>O design atua como infraestrutura comercial: reduz risco percebido e torna o Svicero Studio a escolha natural para clientes que priorizam performance e sofisticação.</p>
+          </li>
+        </ol>
+      </article>
+
+      <aside class="card">
+        <h2 class="section-title">Guia Visual Rápido</h2>
+        <div class="palette">
+          <div class="swatch">
+            <div class="swatch-color" style="background:#FFF8F2"></div>
+            <div class="swatch-meta"><span>Background</span><strong>#FFF8F2</strong></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#2F353B"></div>
+            <div class="swatch-meta"><span>Texto</span><strong>#2F353B</strong></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#B87333"></div>
+            <div class="swatch-meta"><span>Destaques</span><strong>#B87333</strong></div>
+          </div>
+        </div>
+
+        <h3 style="font-size:1rem; margin:0 0 8px;">Diretrizes</h3>
+        <div>
+          <span class="pill">Títulos: Manrope</span>
+          <span class="pill">Textos: Inter</span>
+          <span class="pill">Layout responsivo</span>
+          <span class="pill">Otimizado para PDF</span>
+        </div>
+
+        <p class="footer-note">Exportação recomendada: imprimir em A4 com margens padrão do navegador para melhor equilíbrio visual.</p>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
