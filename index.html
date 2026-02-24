@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svicero Studio | Dashboard de Relatórios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FFF8F2;
+      --text: #2F353B;
+      --accent: #B87333;
+      --card: #ffffff;
+      --border: #e9d6c3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 10% 10%, #fff 0%, #fff8f2 40%, #fdf2e8 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 44px;
+    }
+
+    .hero {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 18px 40px rgba(47,53,59,.08);
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .24em;
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    h1, h2 {
+      font-family: 'Manrope', sans-serif;
+      margin: 0;
+    }
+
+    h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 8px 22px rgba(47,53,59,.06);
+      display: grid;
+      gap: 12px;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      color: var(--text);
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #667079;
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover { filter: brightness(0.95); transform: translateY(-1px); }
+
+    .btn-secondary {
+      border-color: var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+    .note {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #6f767d;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Svicero Studio • Hub</p>
+      <h1>Dashboard de Relatórios</h1>
+      <p class="meta">Acesse rapidamente as versões do relatório e os guias de reaproveitamento do template para novos diagnósticos.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Relatório Visual (claro)</h2>
+        <p class="meta">Página para apresentação estratégica em layout claro, pronta para visualização e exportação em PDF.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="visual.html">Abrir visual.html</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Diagnóstico Estratégico (escuro)</h2>
+        <p class="meta">Diagnóstico completo com seções 01–08 e bloco XML, com estrutura de template reutilizável.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="diagnostico.html">Abrir diagnostico.html</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Guia de Reaproveitamento</h2>
+        <p class="meta">Instruções para substituir apenas o conteúdo entre os marcadores BEGIN/END sem quebrar o design.</p>
+        <div class="actions">
+          <a class="btn btn-secondary" href="COMO_USAR_TEMPLATE.md">Abrir guia</a>
+        </div>
+      </article>
+    </section>
+
+    <p class="note">Dica: use o dashboard como ponto de entrada e mantenha os arquivos de relatório separados por tipo (visual/diagnóstico).</p>
+  </div>
+</body>
+</html>

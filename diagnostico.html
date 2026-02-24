@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico SVICERO CORE DIAGNOSTIC ENGINE v2.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        antracite: '#2F353B',
+                        cardBg: '#262c31',
+                        xmlBg: '#1a1e22',
+                        cobre: '#B87333',
+                        perola: '#FFF8F2',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #2F353B;
+            color: #FFF8F2;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            color: #B87333;
+        }
+        .glass-card {
+            background: #262c31;
+            border: 1px solid rgba(184, 115, 51, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border: 1px solid rgba(184, 115, 51, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .section-accent {
+            border-left: 4px solid #B87333;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1a1e22;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #B87333;
+            border-radius: 10px;
+        }
+
+        @media print {
+            .glass-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            header {
+                min-height: auto !important;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero / Cover Section -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden px-6">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cobre/10 via-transparent to-transparent"></div>
+        <div class="max-w-4xl text-center z-10 animate-fade-in">
+            <p class="text-cobre uppercase tracking-[0.3em] font-semibold mb-4 text-sm">Svicero Studio</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Diagnóstico Estratégico de Percepção de Valor</h1>
+            <div class="w-24 h-1 bg-cobre mx-auto mb-8"></div>
+            <p class="text-xl md:text-2xl font-light text-perola/80 mb-12">SVICERO CORE DIAGNOSTIC ENGINE v2.0</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-sm tracking-widest uppercase opacity-60">
+                <span>Fevereiro de 2026</span>
+                <span class="hidden md:block">•</span>
+                <span>Perito-Chefe: Engenharia de Percepção</span>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-cobre" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- TEMPLATE: mantenha HEAD/STYLE/SCRIPTS. Substitua apenas o bloco entre BEGIN/END REPORT CONTENT -->
+    <!-- BEGIN REPORT CONTENT -->
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- 1. Contexto -->
+        <section id="contexto" class="animate-slide-up">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold sticky top-12 uppercase tracking-tighter">01. Contexto</h2>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="glass-card p-8 rounded-2xl section-accent">
+                        <h3 class="text-xl font-bold mb-4">Momento Atual</h3>
+                        <p class="text-perola/70 leading-relaxed">Svicero Studio (fundada em 2019) está em redefinição, necessitando de nova identidade visual após mudança de nome. O mercado é percebido como aquecido e "fechado", exigindo diferenciação e autoridade imediata. Prazo de implementação: 1 mês.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3 class="text-cobre font-bold mb-2">Desafio Principal</h3>
+                            <p class="text-sm text-perola/70">Superar lacunas na divulgação e percepção de valor. Transicionar do design como "arte" para "engenharia financeira".</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3 class="text-cobre font-bold mb-2">Objetivo Declarado</h3>
+                            <p class="text-sm text-perola/70">Atrair clientes, construir cartela sólida e otimizar conversão via Instagram e canais digitais.</p>
+                        </div>
+                    </div>
+                    <div class="bg-red-900/10 border border-red-500/20 p-6 rounded-2xl">
+                        <h3 class="text-red-400 font-bold mb-2 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            Dores Relatadas
+                        </h3>
+                        <p class="text-perola/60 italic">"Como estou começando ainda não consegui construir esta percepção. Clientes duvidam dos valores e aplicabilidade."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Visão Estratégica -->
+        <section id="visao-estrategica" class="animate-slide-up">
+            <h2 class="text-3xl font-bold mb-12 text-center uppercase tracking-widest">02. Visão Estratégica</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center">
+                    <div class="w-12 h-12 rounded-full bg-cobre/10 flex items-center justify-center mb-6 text-cobre">01</div>
+                    <h3 class="text-xl font-bold mb-4">Clareza</h3>
+                    <p class="text-perola/60 text-sm">Conceitualmente clara internamente: "Arquitetura da decisão". Falta clareza na exposição externa.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border-cobre/40 scale-105 bg-antracite flex flex-col items-center text-center">
+                    <div class="w-12 h-12 rounded-full bg-cobre flex items-center justify-center mb-6 text-antracite font-bold">02</div>
+                    <h3 class="text-xl font-bold mb-4">Diferenciação</h3>
+                    <p class="text-perola/60 text-sm">Design como "Engenharia Financeira" é o diferencial crítico contra o foco puramente estético dos concorrentes.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center">
+                    <div class="w-12 h-12 rounded-full bg-cobre/10 flex items-center justify-center mb-6 text-cobre">03</div>
+                    <h3 class="text-xl font-bold mb-4">Autoridade</h3>
+                    <p class="text-perola/60 text-sm">Status embrionário. A visão é potente, mas a materialização visual ainda não sustenta a autoridade desejada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Posicionamento -->
+        <section id="posicionamento" class="animate-slide-up">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold uppercase tracking-tighter">03. Posicionamento</h2>
+                </div>
+                <div class="md:w-2/3">
+                    <div class="glass-card overflow-hidden rounded-2xl">
+                        <div class="p-8 border-b border-cobre/10">
+                            <h3 class="text-perola mb-2 opacity-50 text-xs uppercase tracking-widest">Slogan & Mensagem</h3>
+                            <p class="text-2xl font-display italic">"Estratégia que eleva, design que posiciona"</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div class="p-8 border-r border-cobre/10">
+                                <h4 class="text-cobre font-bold mb-3 uppercase text-xs">Público Ideal</h4>
+                                <ul class="text-sm space-y-2 text-perola/70">
+                                    <li>• Empresários & Tomadores de decisão</li>
+                                    <li>• Donos de PMEs e Autônomos</li>
+                                    <li>• Perfil que vê design como investimento</li>
+                                </ul>
+                            </div>
+                            <div class="p-8">
+                                <h4 class="text-cobre font-bold mb-3 uppercase text-xs">Linguagem e Tom</h4>
+                                <ul class="text-sm space-y-2 text-perola/70">
+                                    <li>• Inovadora, Discreta e Calma</li>
+                                    <li>• Referências: Apple, Samsung, GM</li>
+                                    <li>• Profissionalismo e Precisão</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Identidade Visual & Presença Digital -->
+        <section id="identidade" class="animate-slide-up">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold uppercase tracking-tighter">04. Identidade Visual</h2>
+                    <div class="glass-card p-8 rounded-2xl">
+                        <p class="text-perola/70 mb-6">A marca atual carece de sofisticação para comunicar "Engenharia Financeira". Há uma desconexão entre o valor entregue e o valor percebido visualmente.</p>
+                        <div class="p-4 bg-cobre/5 rounded-lg border border-cobre/20">
+                            <span class="text-xs text-cobre font-bold uppercase">Benchmark de Autoridade:</span>
+                            <p class="text-perola text-sm mt-1">Vitor Vilela (Design de Autoridade)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold uppercase tracking-tighter">05. Presença Digital</h2>
+                    <div class="glass-card p-8 rounded-2xl">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Instagram / Redes Sociais</span>
+                                <span class="text-xs px-2 py-1 bg-red-500/20 text-red-400 rounded">Subótimo</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Site Institucional (Hub)</span>
+                                <span class="text-xs px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded">Gargalo</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Divulgação de Diferenciais</span>
+                                <span class="text-xs px-2 py-1 bg-red-500/20 text-red-400 rounded">Crítico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Percepção de Valor -->
+        <section id="percepcao-valor" class="animate-slide-up">
+            <div class="glass-card p-12 rounded-[3rem] text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.363.242.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.692C6.604 6.267 6 7.013 6 8c0 .987.604 1.733 1.324 2.216A4.535 4.535 0 009 10.908V12c0 .45.253.847.632 1.058A2.493 2.493 0 0110 13.5c.162 0 .317-.015.468-.045a4.533 4.533 0 001.208-.539C12.396 12.433 13 11.687 13 10.75c0-.987-.604-1.733-1.324-2.216A4.535 4.535 0 0010 7.842V6.75c0-.45-.253-.847-.632-1.058a2.493 2.493 0 01-.368-.192z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold mb-12 uppercase tracking-widest">06. Percepção de Valor</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12 justify-center">
+                    <div class="space-y-2">
+                        <span class="text-perola/40 uppercase text-xs tracking-widest">Valor Atual</span>
+                        <p class="text-4xl font-light line-through opacity-30">Preço Estético</p>
+                    </div>
+                    <div class="text-cobre">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="text-cobre uppercase text-xs tracking-widest font-bold">Valor Potencial</span>
+                        <p class="text-5xl font-bold text-perola">Engenharia Financeira</p>
+                    </div>
+                </div>
+                <p class="mt-12 text-perola/60 max-w-2xl mx-auto">A alavanca principal é a redefinição visual para alinhar a percepção ao valor intrínseco do serviço, permitindo a transição para preços premium.</p>
+            </div>
+        </section>
+
+        <!-- 7. Oportunidades Prioritárias -->
+        <section id="oportunidades" class="animate-slide-up">
+            <h2 class="text-3xl font-bold mb-12 uppercase tracking-tighter">07. Oportunidades Prioritárias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-8 border-2 border-cobre/30 rounded-3xl bg-cobre/5">
+                    <h3 class="text-perola font-bold text-xl mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cobre"></span>
+                        Alta Prioridade
+                    </h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <p class="text-cobre font-bold text-sm uppercase">Identidade Visual Estratégica</p>
+                            <p class="text-sm text-perola/70 mt-1">Sistema visual completo traduzindo sofisticação e calma.</p>
+                        </li>
+                        <li>
+                            <p class="text-cobre font-bold text-sm uppercase">Comunicação do Diferencial</p>
+                            <p class="text-sm text-perola/70 mt-1">Educar o mercado sobre design como arquitetura da decisão.</p>
+                        </li>
+                        <li>
+                            <p class="text-cobre font-bold text-sm uppercase">Otimização de Presença Digital</p>
+                            <p class="text-sm text-perola/70 mt-1">Redesenho de site e Instagram focado em conversão de alto valor.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-8 border border-perola/10 rounded-3xl">
+                    <h3 class="text-perola font-bold text-xl mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-perola/30"></span>
+                        Média Prioridade
+                    </h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <p class="text-perola/60 font-bold text-sm uppercase">Conteúdo de Autoridade</p>
+                            <p class="text-sm text-perola/50 mt-1">Artigos e estudos de caso focados em dores de PMEs.</p>
+                        </li>
+                        <li>
+                            <p class="text-perola/60 font-bold text-sm uppercase">Benchmark Contínuo</p>
+                            <p class="text-sm text-perola/50 mt-1">Monitoramento de líderes de mercado de Design Estratégico.</p>
+                        </li>
+                        <li>
+                            <p class="text-perola/60 font-bold text-sm uppercase">Casos de Sucesso</p>
+                            <p class="text-sm text-perola/50 mt-1">Estruturação de portfólio focado em ROI e engenharia financeira.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Diagnóstico Final -->
+        <section id="diagnostico-final" class="animate-slide-up bg-cobre rounded-3xl p-12 text-antracite">
+            <h2 class="text-3xl font-black mb-6 uppercase italic" style="color: #2F353B;">08. Resumo Executivo</h2>
+            <div class="prose prose-lg text-antracite/90 leading-relaxed font-medium">
+                <p>O Svicero Studio possui uma base estratégica e diferencial técnico extremamente robustos ("Engenharia Financeira"), porém, a percepção de marca atual atua como um teto que impede o crescimento e a precificação justa.</p>
+                <p class="mt-4">A chave mestra para a próxima fase é a materialização visual dessa profundidade estratégica. A identidade visual não deve ser apenas "bonita", mas deve validar a proposta, justificar o investimento e afastar a percepção de amadorismo. Prioridade máxima absoluta: <strong>Nova Identidade Visual Estratégica.</strong></p>
+            </div>
+        </section>
+
+        <!-- Connectivity XML -->
+        <section id="xml-output" class="pt-20">
+            <h2 class="text-sm font-bold mb-4 uppercase tracking-[0.3em] text-cobre/60">Conectividade (Core XML Engine)</h2>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-cobre/20 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <textarea readonly class="relative w-full h-96 bg-xmlBg text-cobre font-mono text-xs p-6 rounded-lg border border-cobre/30 focus:outline-none custom-scrollbar shadow-2xl" spellcheck="false">
+<core_diagnostic_v2>
+    <projeto_info>
+        <nome_negocio>Svicero Studio</nome_negocio>
+        <data_diagnostico>2026</data_diagnostico>
+    </projeto_info>
+    <contexto_profundo>
+        <momento_atual>Empresa em transição, fundação em 2019, mudança de nome e revisão de identidade visual. Mercado aquecido, mas fechado. Cliente busca implementação rápida (1 mês).</momento_atual>
+        <desafio_principal>Fortalecer marca, superar lacunas em divulgação e percepção de valor. Fundador questiona se imagem atual impede cobrança de valor real. Necessidade de transicionar design de "arte" para "engenharia financeira".</desafio_principal>
+        <objetivo_declarado>"Atrair clientes", construir cartela sólida, melhorar posicionamento no Instagram, transformar prospects em clientes.</objetivo_declarado>
+        <dores_relatadas>Dificuldade em construir percepção de valor e divulgação eficaz. Clientes potenciais duvidam de valores, aplicabilidade e necessidade de mudar percepção de valor de sua marca.</dores_relatadas>
+    </contexto_profundo>
+    <analise_visao_estrategica>
+        <clareza_proposta>Conceitualmente clara: "Design estratégico focado em resultados, não apenas estética." Diferenciais de "arquitetura da decisão" e "engenharia financeira" articulados internamente.</clareza_proposta>
+        <diferenciacao_percebida>Abordagem de design como "engenharia financeira" é diferencial crítico. Branding atual não traduz proposta de valor única eficazmente.</diferenciacao_percebida>
+        <autoridade_atual>Embrionária. Fundador tem visão clara, mas empresa reconhece falta de percepção de valor e autoridade externa.</autoridade_atual>
+    </analise_visao_estrategica>
+    <analise_posicionamento_atual>
+        <linguagem_e_tom>Inovadora, discreta e calma. Referências Apple/Samsung. Slogan: "Estratégia que eleva, design que posiciona".</linguagem_e_tom>
+        <promessa_e_nicho>Promessa: Resultados via design estratégico. Nicho: Empresários, PMEs, MEIs buscando crescimento nacional.</promessa_e_nicho>
+    </analise_posicionamento_atual>
+    <diagnostico_marca_visual>
+        <coerencia_e_sofisticacao>Marca carece de sofisticação para "engenharia financeira". Busca estética que valide profundidade estratégica.</coerencia_e_sofisticacao>
+        <percepcao_de_preco_visual>Percepção de preço afetada pela imagem. Desconexão entre valor entregue e percebido.</percepcao_de_preco_visual>
+    </diagnostico_marca_visual>
+    <analise_presenca_digital>
+        <gargalos_site>Site não é hub central eficaz. Performance em redes sociais subótima.</gargalos_site>
+        <performance_redes_sociais>Instagram, Facebook, LinkedIn. Necessidade de melhor posicionamento no Instagram.</performance_redes_sociais>
+    </analise_presenca_digital>
+    <percepcao_valor_final>
+        <disponibilidade_pagamento_estimada>Alta potencial, baixa captura atual pela imagem de marca.</disponibilidade_pagamento_estimada>
+        <potencial_de_evolucao>Alto potencial de escalabilidade via redefinição visual e comunicação de diferenciais.</potencial_de_evolucao>
+    </percepcao_valor_final>
+    <oportunidades_e_direcionamento>
+        <prioridade_alta>1. Nova Identidade Visual Estratégica. 2. Comunicação do Diferencial. 3. Presença Digital.</prioridade_alta>
+        <prioridade_media>1. Conteúdo Educacional. 2. Benchmark Concorrentes. 3. Estruturação Portfólio.</prioridade_media>
+    </oportunidades_e_direcionamento>
+    <conclusao_cirurgica>Base estratégica robusta mas marca atua como limitador. Chave: traduzir "engenharia financeira" em identidade visual premium.</conclusao_cirurgica>
+</core_diagnostic_v2></textarea>
+            </div>
+        </section>
+    </main>
+    <!-- END REPORT CONTENT -->
+
+    <!-- OBS: para um novo diagnóstico, troque somente o conteúdo dentro de <main> -->
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
