@@ -1,0 +1,3 @@
+# Mantém o index.html deste branch em conflitos de merge para evitar alternância
+# entre dashboard (index) e relatório (agora em visual.html).
+index.html merge=ours
