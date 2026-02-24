@@ -24,3 +24,7 @@ Se quiser trocar **somente textos** sem mexer no layout, preserve as classes Tai
 
 ## Também vale para `visual.html`
 A mesma lógica de troca entre `BEGIN/END REPORT CONTENT` também foi aplicada ao `visual.html`.
+
+
+## Padrão visual unificado
+Todos os relatórios agora seguem o mesmo estilo visual-base do `diagnostico.html` (tema escuro com cards e destaque cobre).
